@@ -29,7 +29,8 @@
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
-                    <!-- Possible solution in order to return Result<T> type bypassing Kotlin developers recommendations -->
+                    <!-- Possible solution ]
+                   in order to return Result<T> type bypassing Kotlin developers recommendations -->
                     <!--Research about this flag: https://stackoverflow.com/questions/61223609/how-to-allow-resultt-to-be-return-type-in-kotlin-->
                     <args>
                         <arg>-Xallow-result-return-type</arg>
