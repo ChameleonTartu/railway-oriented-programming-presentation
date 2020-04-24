@@ -1,4 +1,4 @@
-package no.example.service
+package no.example.service.throwexceptionsfunctions
 
 import java.io.BufferedReader
 import java.util.stream.Collectors

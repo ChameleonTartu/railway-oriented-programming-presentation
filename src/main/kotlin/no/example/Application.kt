@@ -1,7 +1,7 @@
 package no.example
 
-import no.example.service.DownloadPage
-import no.example.service.Page
+import no.example.service.throwexceptionsfunctions.DownloadPage
+import no.example.service.throwexceptionsfunctions.Page
 import java.io.BufferedReader
 
 fun main(urls: Array<String>) {
@@ -19,9 +19,13 @@ fun main(urls: Array<String>) {
         .map { p -> p.recoverCatching {
                     e -> e.message?.let {
                          when(e.message) {
-                             "gol.com" -> DownloadPage("https://google.com").content()
-                             "uah-rate.xyz" -> DownloadPage("http://xe352.com").content()
-                             else -> DownloadPage("https://duckduckgo.com").content()
+                             "gol.com" -> DownloadPage("https://google.com")
+                                 .content()
+                             "uah-rate.xyz" -> DownloadPage(
+                                 "http://xe352.com"
+                             ).content()
+                             else -> DownloadPage("https://duckduckgo.com")
+                                 .content()
                          }
                     }
                 }

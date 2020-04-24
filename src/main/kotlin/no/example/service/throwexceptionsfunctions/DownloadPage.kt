@@ -1,7 +1,6 @@
-package no.example.service
+package no.example.service.throwexceptionsfunctions
 
 import java.io.BufferedReader
-import java.lang.Exception
 import java.net.HttpURLConnection
 import java.net.URL
 import java.net.UnknownHostException

@@ -28,3 +28,6 @@ out/
 .idea/
 
 /*/.DS_Store
+
+# Java compiled sources
+target/
