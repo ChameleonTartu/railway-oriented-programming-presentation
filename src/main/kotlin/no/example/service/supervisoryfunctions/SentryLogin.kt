@@ -17,7 +17,7 @@ class SentryLogin {
      * This is Supervisory function which doesn't return anything. Inside itself it contains number of issues,
      * what if Sentry will not be initialized? what if while sending Timeout will happen? and more.
      */
-    fun log(message: Any?): Unit {
+    fun log(message: Any?, email: String?): Unit {
         Sentry.init()
         var sentry: SentryClient = SentryClientFactory.sentryClient()
         val context: Context = sentry.context
@@ -26,7 +26,7 @@ class SentryLogin {
         context.recordBreadcrumb(BreadcrumbBuilder().setMessage("User made an action").build())
 
         // Set the user in the current context.
-        context.user = UserBuilder().setEmail("hello@sentry.io").build()
+        context.user = UserBuilder().setEmail(email).build()
 
         // This sends a simple event to Sentry.
         sentry.sendMessage("$message")

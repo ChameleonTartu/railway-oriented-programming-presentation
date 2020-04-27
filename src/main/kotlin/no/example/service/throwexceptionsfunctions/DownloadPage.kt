@@ -1,6 +1,7 @@
 package no.example.service.throwexceptionsfunctions
 
 import java.io.BufferedReader
+import java.lang.Exception
 import java.net.HttpURLConnection
 import java.net.URL
 import java.net.UnknownHostException
@@ -26,7 +27,7 @@ class DownloadPage(private val page: String) {
         return try {
             val reader: BufferedReader = content()
             listOf(Result.success(reader))
-        } catch (e: UnknownHostException) {
+        } catch (e: Exception) {
             listOf(Result.failure(e))
         }
     }

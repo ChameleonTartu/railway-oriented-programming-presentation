@@ -44,15 +44,11 @@ Example of functions that can have this paradigm and how to write adapters to th
 
 - Dead-end functions. Functions which throw errors. Such as [OutOfMemoryError](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html) or [StackOverflowError](https://docs.oracle.com/javase/7/docs/api/java/lang/StackOverflowError.html). See [HtmlParser](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/deadendfunctions/HtmlParser.kt) and [HtmlParserResult](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/deadendfunctions/HtmlParserResult.kt) examples.
 
-
-TODO: Add examples of HashMap of HashMaps traversal. Realistic Java example.
-https://stackoverflow.com/questions/61409790/how-can-i-model-a-scenario-when-traversal-of-hashmap-of-hashmaps-will-throw-an-s
-
-TODO: Finish examples in here
-
 - Functions that throw exceptions. This is especially useful with IO operations. See [DownloadPage](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/throwexceptionsfunctions/DownloadPage.kt) examples.
 
 - Supervisory functions. Functions which logs and supervise existing code, not necessarily return the result. See [SentryLogin](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/supervisoryfunctions/SentryLogin.kt) and [SentryLoginResult](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/supervisoryfunctions/SentryLoginResult.kt) examples.
+
+All classes have corresponding tests, so you can compare difference in testing. Since adapters are primitive the more real-world example is into [Application](). The idea is to download HTML pages of URLs and recover in those cases when URLs are not valid.
 
 ## How are inspires?
 

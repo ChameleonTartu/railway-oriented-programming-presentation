@@ -7,10 +7,9 @@ class SentryLoginResult {
     /**
      * TODO: Finalize this code.
      */
-    fun log(message: Result<Any?>): List<Result<Any?>> {
+    fun log(message: Result<Any?>, email: String?): List<Result<Any?>> {
         return listOf(message.mapCatching {
-                m -> println(m)
-                SentryLogin().log(m)
+                m -> SentryLogin().log(m, email)
                 return@mapCatching m
         })
     }

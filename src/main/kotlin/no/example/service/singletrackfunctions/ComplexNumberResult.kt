@@ -7,24 +7,20 @@ package no.example.service.singletrackfunctions
  * Side note: In simple scenario like this may seem like an overkill but it how Railway Oriented programming looks on fingers.
  * This technique is adjusted in more complex examples.
  */
-class ComplexNumberResult {
+data class ComplexNumberResult(private val complexNumber: ComplexNumber) {
 
-    private lateinit var complexNumber: ComplexNumber
+    constructor(real: Int, imagine: Int): this(ComplexNumber(real, imagine))
 
-    constructor(real: Int, imagine: Int) {
-        complexNumber = ComplexNumber(real, imagine)
+    fun add(number: ComplexNumberResult): List<Result<ComplexNumber>> {
+        return listOf(Result.success(complexNumber.add(number.complexNumber)))
     }
 
-    fun add(number: ComplexNumber): List<Result<ComplexNumber>> {
-        return listOf(Result.success(complexNumber.add(number)))
+    fun subtract(number: ComplexNumberResult): List<Result<ComplexNumber>> {
+        return listOf(Result.success(complexNumber.subtract(number.complexNumber)))
     }
 
-    fun subtract(number: ComplexNumber): List<Result<ComplexNumber>> {
-        return listOf(Result.success(complexNumber.subtract(number)))
-    }
-
-    fun multiply(number: ComplexNumber): List<Result<ComplexNumber>> {
-        return listOf(Result.success(complexNumber.multiply(number)))
+    fun multiply(number: ComplexNumberResult): List<Result<ComplexNumber>> {
+        return listOf(Result.success(complexNumber.multiply(number.complexNumber)))
     }
 
     fun negate(): List<Result<ComplexNumber>> {
