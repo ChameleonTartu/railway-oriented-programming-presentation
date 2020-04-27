@@ -2,7 +2,7 @@ package no.example.service.deadendfunctions
 
 class HtmlParserResult {
 
-    private lateinit var htmlParser: HtmlParser
+    private val htmlParser: HtmlParser
 
     constructor(html: String) {
         htmlParser = HtmlParser(html)

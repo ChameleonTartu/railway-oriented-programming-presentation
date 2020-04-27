@@ -1,4 +1,4 @@
-package no.example.deadfunctions
+package no.example.service.deadfunctions
 
 import no.example.service.deadendfunctions.HtmlParser
 import no.example.service.deadendfunctions.HtmlParserResult
