@@ -1,5 +1,7 @@
 # Railway Oriented Programming in Kotlin
 
+[![Build Status](https://travis-ci.com/ChameleonTartu/railway-oriented-programming-presentation.svg?branch=master)](https://travis-ci.com/ChameleonTartu/railway-oriented-programming-presentation)
+
 ## What is that?
 
 Railway Oriented Programming (ROP) is a functional programming technique that allows sequential execution of functions, not necessarily synchronous. The key concept is that each function can only accept and return `Container` of either `Success` or `Failure`. `Failure` wraps [Throwable](https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html) type and `Success` can be of any type.
