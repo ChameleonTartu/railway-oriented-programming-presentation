@@ -40,9 +40,9 @@ In the meantime, `Result<T>` can be parameter of functions.
 
 Example of functions that can have this paradigm and how to write adapters to those functions:
 
-- Single track functions. Functions with no errors and no possible exceptions. See [ComplexNumber]() and [ComplexNumberResult]() examples.
+- Single track functions. Functions with no errors and no possible exceptions. See [ComplexNumber](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/singletrackfunctions/ComplexNumber.kt) and [ComplexNumberResult](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/singletrackfunctions/ComplexNumberResult.kt) examples.
 
-- Dead-end functions. Functions which throw errors. Such as [OutOfMemoryError](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html) or [StackOverflowError](https://docs.oracle.com/javase/7/docs/api/java/lang/StackOverflowError.html). See [HtmlParser]() and [HtmlParserResult]() examples.
+- Dead-end functions. Functions which throw errors. Such as [OutOfMemoryError](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks002.html) or [StackOverflowError](https://docs.oracle.com/javase/7/docs/api/java/lang/StackOverflowError.html). See [HtmlParser](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/deadendfunctions/HtmlParser.kt) and [HtmlParserResult](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/deadendfunctions/HtmlParserResult.kt) examples.
 
 
 TODO: Add examples of HashMap of HashMaps traversal. Realistic Java example.
@@ -50,18 +50,9 @@ https://stackoverflow.com/questions/61409790/how-can-i-model-a-scenario-when-tra
 
 TODO: Finish examples in here
 
-- Functions that throw exceptions. This is especially useful with IO operations. See [DownloadPage]() examples.
+- Functions that throw exceptions. This is especially useful with IO operations. See [DownloadPage](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/throwexceptionsfunctions/DownloadPage.kt) examples.
 
-- Supervisory functions. Functions which logs and supervise existing code, not necessarily return the result. See [SentryLogin]() and [SentryLoginResult]() examples.
-
-## How to test ROP code?
-
-TODO: Add examplesx
-
-
-## What are other languages/frameworks who implement/use ROP?
-
-TODO: Add list and links to existing articles
+- Supervisory functions. Functions which logs and supervise existing code, not necessarily return the result. See [SentryLogin](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/supervisoryfunctions/SentryLogin.kt) and [SentryLoginResult](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/supervisoryfunctions/SentryLoginResult.kt) examples.
 
 ## How are inspires?
 
