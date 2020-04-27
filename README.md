@@ -48,7 +48,7 @@ Example of functions that can have this paradigm and how to write adapters to th
 
 - Supervisory functions. Functions which logs and supervise existing code, not necessarily return the result. See [SentryLogin](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/supervisoryfunctions/SentryLogin.kt) and [SentryLoginResult](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/service/supervisoryfunctions/SentryLoginResult.kt) examples.
 
-All classes have corresponding tests, so you can compare difference in testing. Since adapters are primitive the more real-world example is into [Application](). The idea is to download HTML pages of URLs and recover in those cases when URLs are not valid.
+All classes have corresponding tests, so you can compare difference in testing. Since adapters are primitive the more real-world example is into [Application](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/Application.kt). The idea is to download HTML pages of URLs and recover in those cases when URLs are not valid.
 
 ## How are inspires?
 
