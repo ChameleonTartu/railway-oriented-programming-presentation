@@ -36,7 +36,7 @@ In the meantime, `Result<T>` can be parameter of functions.
 - [How to allow Result\<T\> to be return type in Kotlin?
 ](https://stackoverflow.com/questions/61223609/how-to-allow-resultt-to-be-return-type-in-kotlin)
 
-`Result<T>` data-type has [docs]((https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/)) .
+`Result<T>` data-type has [docs](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-result/) .
 
 ## How to apply to existing code?
 
