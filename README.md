@@ -52,7 +52,7 @@ Example of functions that can have this paradigm and how to write adapters to th
 
 All classes have corresponding tests, so you can compare difference in testing. Since adapters are primitive the more real-world example is into [Application](https://github.com/ChameleonTartu/railway-oriented-programming-presentation/blob/master/src/main/kotlin/no/example/Application.kt). The idea is to download HTML pages of URLs and recover in those cases when URLs are not valid.
 
-## How are inspires?
+## Who are inspires?
 
 This repo was inspired by:
 
